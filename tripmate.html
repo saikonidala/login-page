@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map{
+            width: 20px;
+            height: 20px;
+        }
+        .title{
+            gap:10px
+        }
+        .navi{
+            display: flex;
+            gap:30px;
+
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 0px 0px 3px 3px rgb(46, 44, 44);
+            padding: 10px;
+            background: linear-gradient(45deg, #51cbdc, #d1d83d8f);
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            border-radius: 20px;
+            padding: 5px;
+            background:rgba(228, 233, 130, 0.947);
+        }
+        .about{
+            padding: 50px;
+            background:rgba(245, 245, 245, 0.947);
+            border-radius: 20px;
+        }
+        .image{
+            background-image: url("../images/logo.jpg");
+            /* background: fixed; */
+            width: 100%;
+            height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        .vehicles,.tripplanner,.hotels,.trekking,.social,.ai{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+        }
+        .services{
+            display: flex;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h3><img id="map" src="../images/map.png" alt="">TripMate India</h3>
+        </div>
+        <div class="navi">
+             <a href="">Vehicles</a>
+             <a href="">Trip Planner</a>
+             <a href="">Hotels</a>
+             <a href="">Trekking</a>
+             <a href="">Social</a>
+        </div>
+        <div class="out">
+            <a href="login.html">Logout</a>
+        </div>
+    </div><br>
+    <div class="image">
+        <center>
+            <h1>Discover India's Beauty</h1>
+            <p>Your AI-powered companion for unforgettable journeys<br> across incredible India</p>
+            <a href="">Start Your Journey</a>
+        </center>
+    </div>
+    <div class="about">
+        <center>
+            <h1>Who We  Are</h1>
+            <p>TripMate India combines cutting-edge AI technology with local expertise to<br> create personalized travel experiences. From vehicle rentals to trek bookings,<br> we're your one-stop platform for exploring India.</p>
+        </center>
+    </div>
+    <div class="services">
+        <div class="vehicles"></div>
+        <div class="tripplanner"></div>
+        <div class="hotels"></div>
+        <div class="trekking"></div>
+        <div class="social"></div>
+        <div class="ai"></div>
+    </div>
+
+     
+</body>
+</html>
