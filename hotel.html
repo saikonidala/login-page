@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .finalstatement{
+            display: flex;
+            justify-content: space-around;
+            background-color: bisque;
+            border-radius: 20px;
+            align-content: center;
+        }
+        #map{
+            width: 20px;
+            height: 20px;
+        }
+        body{
+            background-color: black;
+        }
+        marquee{
+            color:white;
+        }
+        td img{
+            width: 250px;
+            height: 200px;
+            border-radius: 20px;
+        }
+        .heading{
+            background: linear-gradient(45deg, #4aa6ea, #9aabe6);
+            padding: 5px;
+            border-radius: 20px;
+
+        }
+        .hotels{
+            background: linear-gradient(45deg, #d6e56a, #d6c14ebd);
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        td div{
+            flex-direction: column;
+            background-color: aqua;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: anchor-center;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        button{
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+            border: none;
+            background-color: rgb(51, 208, 51);
+            color: white;
+            padding: 5px;
+            width: 80%;
+        }
+        button:hover{
+            background-color:rgb(114, 239, 197);
+            color: red;
+            transition: 0.5s;
+        }
+        #map{
+            width: 20px;
+            height: 20px;
+        }
+        .title{
+            gap:10px
+        }
+        .navi{
+            display: flex;
+            gap:30px;
+
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 0px 0px 3px 3px rgb(46, 44, 44);
+            padding: 10px;
+            background: linear-gradient(45deg, #51cbdc, #d1d83d8f);
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            border-radius: 20px;
+            padding: 5px;
+            background:rgba(228, 233, 130, 0.947);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h3><img id="map" src="../images/map.png" alt="">TripMate India</h3>
+        </div>
+        <div class="navi">
+             <a href="vehicles.html">Vehicles</a>
+             <a href="ai.html">Trip Planner</a>
+             <a href="hotel.html">Hotels</a>
+             <a href="trecking.html">Trekking</a>
+             <a href="">Social</a>
+        </div>
+        <div class="out">
+            <a href="login.html">Logout</a>
+        </div>
+    </div><br>
+     <div class="heading">
+        <h1>Hotel Bookings</h1>
+        <h5> Comfortable stays across india</h5>
+    </div><br>
+    <div class="hotels">
+        <h1>Our Branches</h1>
+        <table>
+            <tr>
+                <td>
+                    <div class="banglore">
+                        <img src="/images/banglore.jpeg" alt="">
+                        Banglore,Karnataka <br>
+                        &#11088;4.5 <br>
+                        &#x20B9;1000/night
+                        <button>Book Now</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="mumbai">
+                        <img src="/images/mumbai.jpg" alt="">
+                        Mumbai,maharastra <br>
+                        &#11088;4.7 <br>
+                        &#x20B9;1500/night
+                        <button>Book Now</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="hyd">
+                        <img src="/images/hyderabad.jpg" alt="">
+                        hyderabad,Telangana <br>
+                        &#11088;4.5 <br>
+                        &#x20B9;1250/night
+                        <button>Book Now</button>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <div class="kkr">
+                        <img src="/images/kolkata.jpg" alt="">
+                        Kolkata,West Bengal <br>
+                        &#11088;4.5 <br>
+                        &#x20B9;2000/night
+                        <button>Book Now</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="goa">
+                        <img src="/images/goa.webp" alt="">
+                        Panaji,Goa <br>
+                        &#11088;4.3 <br>
+                        &#x20B9;5000/night
+                        <button>Book Now</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="araku">
+                        <img src="/images/araku.jpg" alt="">
+                        Araku,vizag <br>
+                        &#11088;4.9 <br>
+                        &#x20B9;3000/night
+                        <button>Book Now</button>
+                    </div>
+                </td>
+             </tr>
+        </table>
+    </div><br>
+    <div class="finalstatement">
+        <div class="passage">
+            <h3><img id="map" src="/images/map.png" alt="">TripMate India</h3>
+            <p>Your trusted companion for <br> exploring india's beauty <br> through rentals,trips and <br>adventures.</p>
+        </div>
+        <div class="quicklinks">
+            <h3>Quick Links</h3>
+            <li>Vehicles</li>
+            <li>Trip Planner</li>
+            <li>Hotels</li>
+            <li>Trekking</li>
+        </div>
+        <div class="services1">
+            <h3>Services</h3>
+            <li>Bike Rentals</li>
+            <li>Car Rentals</li>
+            <li>AI Trip Planner</li>
+            <li>Group Tours</li>
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            sai@gmail.com <br>
+            8639019475
+        </div>
+    </div><br><br>
+    <marquee behavior="" direction="">All Rights Reserved from @saiKonidala</marquee>
+</body>
+</html>

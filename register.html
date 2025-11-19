@@ -58,7 +58,7 @@
                 <input type="email" placeholder="email"  id="email"><br><br>
                 <input type="password" placeholder="password"  id="password"><br><br>
                 <input type="password" placeholder="Retype-password"  id="checkpassword"><br><br>
-                <button id="signin" type="submit">sign in</button>
+                <button id="signin" type="submit">Register</button>
                 <p id="error"></p>
             </form>
         </center>
@@ -75,11 +75,9 @@
         form.addEventListener('submit',async (e)=>{
             e.preventDefault()
             if(!username.value||!email.value||!password.value||!cpassword.value){
-                //alert("All fields required")
                 error.innerText="All fields required";
             }
             else if(username.value.length<5){
-                //alert("User name contain atleast 5 characters")
                 error.innerText="User name contain atleast 5 characters";
             }
             else if(password.value.length<6){
@@ -89,36 +87,31 @@
                 error.innerText="password not matched"
             }
             else{
-                //form.addEventListener('submit',async (e)=>{
-                // e.preventDefault()
-                    //const obj=new URLSearchParams(new FormData(form));
-                    const obj={
-                        username:username.value,
-                        email:email.value,
-                        password:password.value
-                    }
-                    const resp = await fetch("http://localhost:4000/home",{
-                        method:'POST',
-                        headers:{
-                            "Content-type":"application/json"
-                        },
-                        body:JSON.stringify(obj)
-                    })
-                    console.log(resp.status)
-                    const data=await resp.json();
-                    if(resp.status==409){
-                        alert(data.message)
-                    }
-                    if(resp.status==200){
-                        alert(data.message)
-                        window.location.href="index.html"
-                    }
-        // })
+                const obj={
+                    username:username.value,
+                    email:email.value,
+                    password:password.value
+                }
+                const resp = await fetch("http://localhost:4000/home",{
+                    method:'POST',
+                    headers:{
+                        "Content-type":"application/json"
+                    },
+                    body:JSON.stringify(obj)
+                })
+                console.log(resp.status)
+                const data=await resp.json();
+                if(resp.status==409){
+                    alert(data.message)
+                }
+                if(resp.status==200){
+                    alert(data.message)
+                    window.location.href="login.html"
+                }
             
             }
         })
   
     </script>
 </body>
-
 </html>
